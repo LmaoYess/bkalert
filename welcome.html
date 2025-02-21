@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome!</h2>
+        <p>You are logged in.</p>
+        <a href="index.html"><button>Logout</button></a>
+    </div>
+
+    <div class="feedback-box" id="feedbackBox">
+        <button class="feedback-toggle" onclick="toggleFeedback()">💬 Feedback</button>
+        <div class="feedback-content" id="feedbackContent">
+            <h3>Ask Admin</h3>
+            <textarea id="feedbackText" placeholder="Type your message..."></textarea>
+            <button onclick="submitFeedback()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
