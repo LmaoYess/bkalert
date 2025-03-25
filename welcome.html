@@ -11,6 +11,7 @@
         <h2>Welcome!</h2>
         <p>You are logged in.</p>
         <a href="index.html"><button>Logout</button></a>
+        <p>Page View Count: <span id="viewCount"></span></p>
     </div>
 
     <div class="feedback-box" id="feedbackBox">
@@ -23,5 +24,10 @@
     </div>
 
     <script src="script.js"></script>
+
+    <script>
+        // Display the view count on the welcome page
+        document.getElementById('viewCount').textContent = localStorage.getItem('viewCount');
+    </script>
 </body>
 </html>
