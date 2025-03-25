@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <div class="login-container">
-      <h2>Login</h2>
-      <form id="loginForm">
-        <label for="username">Username</label>
-        <input
-          type="text"
-          id="username"
-          placeholder="Enter your username"
-          required
-        />
+        <h2>Welcome!</h2>
+        <p>You are logged in.</p>
+        <a href="index.html"><button>Logout</button></a>
+        <p>Page View Count: <span id="viewCount"></span></p>
+    </div>
 
-        <label for="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          placeholder="Enter your password"
-          required
-        />
-
-        <button type="submit">Login</button>
-      </form>
-
-      <button id="guestLogin">Login as Guest</button>
-
-      <div class="sign-up-link">
-        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-      </div>
+    <div class="feedback-box" id="feedbackBox">
+        <button class="feedback-toggle" onclick="toggleFeedback()">💬 Feedback</button>
+        <div class="feedback-content" id="feedbackContent">
+            <h3>Ask Admin</h3>
+            <textarea id="feedbackText" placeholder="Type your message..."></textarea>
+            <button onclick="submitFeedback()">Send</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
-  </body>
+
+    <script>
+        // Display the view count on the welcome page
+        document.getElementById('viewCount').textContent = localStorage.getItem('viewCount');
+    </script>
+</body>
 </html>
