@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #0a192f;
+  background-color: #0A192F;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@ body {
 }
 
 .login-container {
-  background: #112d4e;
+  background: #112D4E;
   padding: 20px;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
   border-radius: 8px;
@@ -26,16 +26,16 @@ h2 {
 label {
   display: block;
   margin: 10px 0 5px;
-  color: #f9f7f7;
+  color: #F9F7F7;
 }
 
 input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #3f72af;
+  border: 1px solid #3F72AF;
   border-radius: 5px;
-  background-color: #1b365d;
+  background-color: #1B365D;
   color: white;
 }
 
@@ -43,7 +43,7 @@ button {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
-  background-color: #3f72af;
+  background-color: #3F72AF;
   color: white;
   border: none;
   border-radius: 5px;
@@ -51,8 +51,9 @@ button {
 }
 
 button:hover {
-  background-color: #1b365d;
+  background-color: #1B365D;
 }
+
 .feedback-box {
   position: fixed;
   bottom: 20px;
@@ -63,7 +64,7 @@ button:hover {
 
 .feedback-toggle {
   width: 100%;
-  background-color: #3f72af;
+  background-color: #3F72AF;
   color: white;
   border: none;
   padding: 10px;
@@ -73,7 +74,7 @@ button:hover {
 
 .feedback-content {
   display: none;
-  background: #112d4e;
+  background: #112D4E;
   padding: 15px;
   border-radius: 8px;
   margin-top: 5px;
@@ -82,23 +83,24 @@ button:hover {
 .feedback-content textarea {
   width: 100%;
   height: 60px;
-  background-color: #1b365d;
+  background-color: #1B365D;
   color: white;
 }
 
 .feedback-content button {
-  background-color: #3f72af;
+  background-color: #3F72AF;
 }
+
 .sign-up-link {
-  margin-top: 10px;
-  font-size: 14px;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
 .sign-up-link a {
-  color: #f9f7f7;
-  text-decoration: none;
+    color: #F9F7F7;
+    text-decoration: none;
 }
 
 .sign-up-link a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
